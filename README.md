@@ -326,11 +326,12 @@ Legend:
 
 * [x] Grip points
 * [ ] Stretch
-* [ ] Trim
+* [x] Trim
 * [ ] Extend
 * [x] Offset
 * [ ] Explode
-* [ ] Join / fillet / chamfer (2D)
+* [x] Fillet (2D)
+* [ ] Join / chamfer (2D)
 
 ### Drawing & Creation Tools
 

@@ -132,6 +132,8 @@ import {
   mtext,
   multiPoints,
   offset,
+  trim,
+  fillet,
   polygon,
   polyline,
   properties,
@@ -1186,6 +1188,8 @@ const buildBaseTabs = (
     copy: t('main.ribbon.tooltip.copy'),
     erase: t('main.ribbon.tooltip.erase'),
     offset: t('main.ribbon.tooltip.offset'),
+    trim: t('main.ribbon.tooltip.trim'),
+    fillet: t('main.ribbon.tooltip.fillet'),
     undo: t('main.ribbon.tooltip.undo'),
     redo: t('main.ribbon.tooltip.redo'),
     properties: t('main.ribbon.tooltip.properties'),
@@ -2074,7 +2078,7 @@ const buildBaseTabs = (
             {
               id: 'home-modify-secondary',
               layout: 'column',
-              rows: 3,
+              rows: 4,
               items: [
                 {
                   id: 'cmd-erase',
@@ -2091,6 +2095,22 @@ const buildBaseTabs = (
                   tooltip: ribbonTooltips.offset,
                   size: 'small',
                   props: { icon: offset }
+                },
+                {
+                  id: 'cmd-trim',
+                  type: 'button',
+                  label: t('main.ribbon.command.trim'),
+                  tooltip: ribbonTooltips.trim,
+                  size: 'small',
+                  props: { icon: trim }
+                },
+                {
+                  id: 'cmd-fillet',
+                  type: 'button',
+                  label: t('main.ribbon.command.fillet'),
+                  tooltip: ribbonTooltips.fillet,
+                  size: 'small',
+                  props: { icon: fillet }
                 }
               ]
             }
@@ -2568,6 +2588,8 @@ const ribbonData = computed(() => {
   commandByItemId.set('cmd-copy', 'copy')
   commandByItemId.set('cmd-erase', 'erase')
   commandByItemId.set('cmd-offset', 'offset')
+  commandByItemId.set('cmd-trim', 'trim')
+  commandByItemId.set('cmd-fillet', 'fillet')
   commandByItemId.set('cmd-layer', 'layer')
   commandByItemId.set('cmd-properties', 'properties')
   commandByItemId.set('cmd-qselect', 'qselect')

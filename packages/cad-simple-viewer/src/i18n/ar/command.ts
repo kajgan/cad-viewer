@@ -604,6 +604,22 @@ export default {
         'إنشاء منحنيات أو خطوط متعددة أو دوائر موازية على مسافة محددة'
     },
 
+    trim: {
+      ...enCommand.ACAD.trim,
+      description:
+        'قص العناصر عند حواف القطع. اضغط Enter لاستخدام كل العناصر كحواف قطع.',
+      prompt:
+        'حدد حواف القطع'
+    },
+
+    fillet: {
+      ...enCommand.ACAD.fillet,
+      description:
+        'تقويس ركن خطين أو رأس خط متعدد. استخدم نصف القطر لتعيين نصف قطر التقويس (0 يمدد الخطوط إلى ركن حاد).',
+      prompt:
+        'حدد العنصر الأول'
+    },
+
     mtext: {
       ...enCommand.ACAD.mtext,
       description:

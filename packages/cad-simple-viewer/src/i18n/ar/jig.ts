@@ -465,6 +465,74 @@ export default {
       'تعذر إنشاء منحنى إزاحة في الجهة المحددة.'
   },
 
+  trim: {
+    ...enJig.trim,
+
+    selectCuttingEdges:
+      'حدد حواف القطع أو اضغط Enter لاستخدام كل العناصر',
+
+    selectObject:
+      'حدد العنصر المطلوب قصه أو اضغط Enter للإنهاء',
+
+    noCuttingEdges:
+      'لم يتم العثور على حواف قطع.',
+
+    invalidSelection:
+      'لا يمكن قص العنصر المحدد.',
+
+    unsupported:
+      'لا يمكن قص هذا النوع من العناصر.',
+
+    doesNotIntersect:
+      'العنصر المحدد لا يتقاطع مع حافة قطع.'
+  },
+
+  fillet: {
+    ...enJig.fillet,
+
+    currentRadius:
+      'نصف قطر التقويس الحالي =',
+
+    selectFirst:
+      'حدد العنصر الأول أو',
+
+    selectSecond:
+      'حدد العنصر الثاني',
+
+    radius:
+      'حدد نصف قطر التقويس',
+
+    invalidSelection:
+      'لا يمكن تقويس العنصر المحدد.',
+
+    unsupported:
+      'يدعم التقويس خطين، أو قطعتين متجاورتين من الخط المتعدد.',
+
+    needTwoObjects:
+      'حدد عنصرين مختلفين.',
+
+    notAdjacent:
+      'قطعتا الخط المتعدد المحددتان غير متجاورتين.',
+
+    parallel:
+      'الخطوط متوازية أو لا تلتقي.',
+
+    degenerate:
+      'تعذر تقويس العناصر المحددة بنصف القطر الحالي.',
+
+    invalidRadius:
+      'يجب أن يكون نصف قطر التقويس 0 أو أكبر.',
+
+    keywords: {
+      ...enJig.fillet.keywords,
+      radius: {
+        display: 'نصف القطر(R)',
+        local: 'نصف القطر',
+        global: 'Radius'
+      }
+    }
+  },
+
   mtext: {
     ...enJig.mtext,
 

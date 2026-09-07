@@ -330,6 +330,16 @@ export default {
       description:
         'Creates parallel curves, polylines, or circles at a specified distance'
     },
+    trim: {
+      description:
+        'Trims objects at cutting edges. Press Enter to use all objects as cutting edges.',
+      prompt: 'Select cutting edges'
+    },
+    fillet: {
+      description:
+        'Rounds the corner of two lines or a polyline vertex. Use Radius to set the fillet radius (0 extends lines to a sharp corner).',
+      prompt: 'Select first object'
+    },
     mtext: {
       description: 'Creates one mtext entity'
     },

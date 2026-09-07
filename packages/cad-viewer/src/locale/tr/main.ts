@@ -296,6 +296,9 @@ export default {
       erase: 'Seçili nesneleri çizimden silin.',
       offset:
         'Bir nesnenin belirtilen mesafede paralel bir kopyasını oluşturun.',
+      trim: 'Nesneleri kesme kenarlarında kırpın. Tüm nesneleri kesme kenarı olarak kullanmak için Enter\'a basın.',
+      fillet:
+        'İki çizginin veya bir çoklu çizgi köşesinin kenarını yuvarlatın. Yarıçap seçeneğiyle yuvarlatma yarıçapını ayarlayın.',
       undo: 'Son düzenleme işlemini geri alın.',
       redo: 'Son geri alınan düzenleme işlemini yineleyin.',
       properties: 'Geçerli seçim için Özellikler panelini açın.',
@@ -411,6 +414,8 @@ export default {
       copy: 'Kopyala',
       erase: 'Sil',
       offset: 'Ötele',
+      trim: 'Kırp',
+      fillet: 'Yuvarlat',
       undo: 'Geri Al',
       redo: 'Yinele',
       properties: 'Özellikler',

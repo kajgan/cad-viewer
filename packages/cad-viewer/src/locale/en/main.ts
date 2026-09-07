@@ -291,6 +291,9 @@ export default {
       copy: 'Copy selected objects to a new location.',
       erase: 'Delete selected objects from the drawing.',
       offset: 'Create a parallel copy of an object at a specified distance.',
+      trim: 'Trim objects at cutting edges. Press Enter to use all objects as cutting edges.',
+      fillet:
+        'Round the corner of two lines or a polyline vertex. Use Radius to set the fillet radius.',
       undo: 'Undo the last editing operation.',
       redo: 'Redo the last undone editing operation.',
       properties: 'Open the Properties palette for the current selection.',
@@ -407,6 +410,8 @@ export default {
       copy: 'Copy',
       erase: 'Erase',
       offset: 'Offset',
+      trim: 'Trim',
+      fillet: 'Fillet',
       undo: 'Undo',
       redo: 'Redo',
       properties: 'Properties',

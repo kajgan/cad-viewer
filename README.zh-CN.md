@@ -326,11 +326,12 @@ CAD-Viewer 针对复杂图纸渲染进行了多项优化，可在保持高帧率
 
 -   [x] 夹点（Grip Points）
 -   [ ] 拉伸（Stretch）
--   [ ] 修剪（Trim）
+-   [x] 修剪（Trim）
 -   [ ] 延伸（Extend）
 -   [x] 偏移（Offset）
 -   [ ] 分解（Explode）
--   [ ] 连接 / 圆角 / 倒角（2D）
+-   [x] 圆角（Fillet，2D）
+-   [ ] 连接 / 倒角（Join / Chamfer，2D）
 
 ### 绘制与创建工具
 

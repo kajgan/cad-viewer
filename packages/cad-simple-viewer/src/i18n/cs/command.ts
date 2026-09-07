@@ -332,6 +332,16 @@ export default {
       description:
         'Vytvoří rovnoběžné kopie křivek, lomených čar nebo kružnic v zadané vzdálenosti'
     },
+    trim: {
+      description:
+        'Ořízne objekty podle řezných hran. Klávesou Enter použijete všechny objekty jako řezné hrany.',
+      prompt: 'Vyberte řezné hrany'
+    },
+    fillet: {
+      description:
+        'Zaoblí roh dvou úseček nebo vrchol lomené čáry. Volbou Poloměr nastavíte poloměr zaoblení (0 prodlouží úsečky do ostrého rohu).',
+      prompt: 'Vyberte první objekt'
+    },
     mtext: {
       description: 'Vytvoří jeden objekt víceřádkového textu'
     },

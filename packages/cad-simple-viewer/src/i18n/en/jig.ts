@@ -769,6 +769,35 @@ export default {
     invalidSelection: 'Selected object cannot be offset.',
     offsetFailed: 'Unable to create an offset curve for the specified side.'
   },
+  trim: {
+    selectCuttingEdges:
+      'Select cutting edges or press Enter to use all objects',
+    selectObject: 'Select object to trim or press Enter to finish',
+    noCuttingEdges: 'No cutting edges found.',
+    invalidSelection: 'Selected object cannot be trimmed.',
+    unsupported: 'This object type cannot be trimmed.',
+    doesNotIntersect: 'The selected object does not intersect a cutting edge.'
+  },
+  fillet: {
+    currentRadius: 'Current fillet radius =',
+    selectFirst: 'Select first object or',
+    selectSecond: 'Select second object',
+    radius: 'Specify fillet radius',
+    invalidSelection: 'Selected object cannot be filleted.',
+    unsupported: 'FILLET supports two lines, or two adjacent polyline segments.',
+    needTwoObjects: 'Select two different objects.',
+    notAdjacent: 'The selected polyline segments are not adjacent.',
+    parallel: 'Lines are parallel or do not meet.',
+    degenerate: 'Cannot fillet the selected objects with the current radius.',
+    invalidRadius: 'Fillet radius must be 0 or greater.',
+    keywords: {
+      radius: {
+        display: 'Radius(R)',
+        local: 'Radius',
+        global: 'Radius'
+      }
+    }
+  },
   mtext: {
     point: 'Specify mtext insertion point'
   },

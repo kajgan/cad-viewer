@@ -1982,6 +1982,10 @@ export class AcTrView2d extends AcEdBaseView {
 
     // Reconvert through the same path as initial load so block references are
     // split by layer correctly and deferred MTEXT/SHAPE geometry is drawn.
+    // batchConvert always decrements `_numOfEntitiesToProcess` per entity, so
+    // updates must increment first — otherwise FILLET/TRIM in-place edits
+    // drive the counter below zero.
+    this._numOfEntitiesToProcess += entities.length
     void (async () => {
       await this.batchConvert(entities)
       await this.waitUntilDeferredGeometryIdle()

@@ -27,6 +27,7 @@ import {
   AcApEllipseCmd,
   AcApEntityPreviewCmd,
   AcApEraseCmd,
+  AcApFilletCmd,
   AcApHatchCmd,
   AcApHideObjectsCmd,
   AcApImageAttachCmd,
@@ -51,6 +52,7 @@ import {
   AcApMTextCmd,
   AcApOffsetCmd,
   AcApOpenCmd,
+  AcApTrimCmd,
   AcApPanCmd,
   AcApPointCmd,
   AcApPolygonCmd,
@@ -159,6 +161,8 @@ const DEFAULT_COMMAND_ALIASES: Record<string, string[]> = {
   MTEXT: ['T'],
   MOVE: ['M'],
   OFFSET: ['O'],
+  TRIM: ['TR'],
+  FILLET: ['F'],
   COPY: ['CO'],
   ROTATE: ['RO'],
   OPEN: ['OP'],
@@ -1719,6 +1723,8 @@ export class AcApDocManager {
     addSystemCommand('copy', 'copy', new AcApCopyCmd())
     addSystemCommand('move', 'move', new AcApMoveCmd())
     addSystemCommand('offset', 'offset', new AcApOffsetCmd())
+    addSystemCommand('trim', 'trim', new AcApTrimCmd())
+    addSystemCommand('fillet', 'fillet', new AcApFilletCmd())
     addSystemCommand('rotate', 'rotate', new AcApRotateCmd())
     addSystemCommand('log', 'log', new AcApLogCmd())
     addSystemCommand('open', 'open', new AcApOpenCmd())

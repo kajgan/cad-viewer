@@ -299,6 +299,15 @@ export default {
     offset: {
       description: '按指定距离创建平行曲线、多段线或圆'
     },
+    trim: {
+      description: '在剪切边处修剪对象。按 Enter 可将所有对象用作剪切边。',
+      prompt: '选择剪切边'
+    },
+    fillet: {
+      description:
+        '将两条直线或一段多段线的角点倒成圆角。使用“半径”设置圆角半径（0 可将直线延伸为尖角）。',
+      prompt: '选择第一个对象'
+    },
     mtext: {
       description: '创建多行文本'
     },

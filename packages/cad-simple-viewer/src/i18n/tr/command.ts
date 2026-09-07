@@ -342,6 +342,16 @@ export default {
       description:
         'Belirtilen bir mesafede paralel eğriler, çoklu çizgiler veya daireler oluşturur'
     },
+    trim: {
+      description:
+        'Nesneleri kesme kenarlarında kırpar. Tüm nesneleri kesme kenarı olarak kullanmak için Enter\'a basın.',
+      prompt: 'Kesme kenarlarını seçin'
+    },
+    fillet: {
+      description:
+        'İki çizginin veya bir çoklu çizgi köşesinin kenarını yuvarlatır. Yarıçap seçeneğiyle yuvarlatma yarıçapını ayarlayın (0 çizgileri keskin köşede birleştirir).',
+      prompt: 'İlk nesneyi seçin'
+    },
     mtext: {
       description: 'Bir çoklu metin varlığı oluşturur'
     },

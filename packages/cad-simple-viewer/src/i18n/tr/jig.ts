@@ -768,6 +768,37 @@ export default {
     invalidSelection: 'Seçilen nesne ötelenemez.',
     offsetFailed: 'Belirtilen taraf için bir öteleme eğrisi oluşturulamadı.'
   },
+  trim: {
+    selectCuttingEdges:
+      'Kesme kenarlarını seçin veya tüm nesneleri kullanmak için Enter\'a basın',
+    selectObject: 'Kırpılacak nesneyi seçin veya bitirmek için Enter\'a basın',
+    noCuttingEdges: 'Kesme kenarı bulunamadı.',
+    invalidSelection: 'Seçilen nesne kırılamaz.',
+    unsupported: 'Bu nesne türü kırılamaz.',
+    doesNotIntersect: 'Seçilen nesne bir kesme kenarıyla kesişmiyor.'
+  },
+  fillet: {
+    currentRadius: 'Geçerli yuvarlatma yarıçapı =',
+    selectFirst: 'İlk nesneyi seçin veya',
+    selectSecond: 'İkinci nesneyi seçin',
+    radius: 'Yuvarlatma yarıçapını belirtin',
+    invalidSelection: 'Seçilen nesne yuvarlatılamaz.',
+    unsupported:
+      'Yuvarlatma iki çizgiyi veya aynı çoklu çizginin komşu iki parçasını destekler.',
+    needTwoObjects: 'İki farklı nesne seçin.',
+    notAdjacent: 'Seçilen çoklu çizgi parçaları komşu değil.',
+    parallel: 'Çizgiler paralel veya kesişmiyor.',
+    degenerate:
+      'Seçilen nesneler geçerli yarıçap ile yuvarlatılamıyor.',
+    invalidRadius: 'Yuvarlatma yarıçapı 0 veya daha büyük olmalıdır.',
+    keywords: {
+      radius: {
+        display: 'Yarıçap(R)',
+        local: 'Yarıçap',
+        global: 'Radius'
+      }
+    }
+  },
   mtext: {
     point: 'Çok satırlı metin ekleme noktasını belirtin'
   },

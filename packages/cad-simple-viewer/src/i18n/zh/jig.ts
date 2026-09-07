@@ -758,6 +758,34 @@ export default {
     invalidSelection: '所选对象不能偏移。',
     offsetFailed: '无法在指定侧创建偏移曲线。'
   },
+  trim: {
+    selectCuttingEdges: '选择剪切边，或按 Enter 使用所有对象',
+    selectObject: '选择要修剪的对象，或按 Enter 结束',
+    noCuttingEdges: '未找到剪切边。',
+    invalidSelection: '所选对象不能修剪。',
+    unsupported: '此对象类型不能修剪。',
+    doesNotIntersect: '所选对象未与剪切边相交。'
+  },
+  fillet: {
+    currentRadius: '当前圆角半径 =',
+    selectFirst: '选择第一个对象或',
+    selectSecond: '选择第二个对象',
+    radius: '指定圆角半径',
+    invalidSelection: '所选对象不能圆角。',
+    unsupported: '圆角支持两条直线，或同一多段线上相邻的两段。',
+    needTwoObjects: '请选择两个不同的对象。',
+    notAdjacent: '所选多段线段不相邻。',
+    parallel: '直线平行或不相交。',
+    degenerate: '无法使用当前半径对所选对象进行圆角。',
+    invalidRadius: '圆角半径必须大于或等于 0。',
+    keywords: {
+      radius: {
+        display: '半径(R)',
+        local: '半径',
+        global: 'Radius'
+      }
+    }
+  },
   mtext: {
     point: '指定多行文本插入点'
   },

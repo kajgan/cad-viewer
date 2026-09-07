@@ -767,6 +767,37 @@ export default {
     invalidSelection: 'Vybraný objekt nelze offsetovat.',
     offsetFailed: 'Nelze vytvořit offsetovou křivku na zadané straně.'
   },
+  trim: {
+    selectCuttingEdges:
+      'Vyberte řezné hrany nebo stiskněte Enter pro použití všech objektů',
+    selectObject: 'Vyberte objekt k oříznutí nebo stiskněte Enter pro dokončení',
+    noCuttingEdges: 'Nebyly nalezeny žádné řezné hrany.',
+    invalidSelection: 'Vybraný objekt nelze oříznout.',
+    unsupported: 'Tento typ objektu nelze oříznout.',
+    doesNotIntersect: 'Vybraný objekt neprotíná řeznou hranu.'
+  },
+  fillet: {
+    currentRadius: 'Aktuální poloměr zaoblení =',
+    selectFirst: 'Vyberte první objekt nebo',
+    selectSecond: 'Vyberte druhý objekt',
+    radius: 'Zadejte poloměr zaoblení',
+    invalidSelection: 'Vybraný objekt nelze zaoblit.',
+    unsupported:
+      'Zaoblení podporuje dvě úsečky nebo dva sousední úseky lomené čáry.',
+    needTwoObjects: 'Vyberte dva různé objekty.',
+    notAdjacent: 'Vybrané úseky lomené čáry nesousedí.',
+    parallel: 'Úsečky jsou rovnoběžné nebo se neprotínají.',
+    degenerate:
+      'Vybrané objekty nelze zaoblit se zadaným poloměrem.',
+    invalidRadius: 'Poloměr zaoblení musí být 0 nebo větší.',
+    keywords: {
+      radius: {
+        display: 'Poloměr(R)',
+        local: 'Poloměr',
+        global: 'Radius'
+      }
+    }
+  },
   mtext: {
     point: 'Zadejte bod vložení víceřádkového textu'
   },

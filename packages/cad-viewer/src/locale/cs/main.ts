@@ -290,6 +290,9 @@ export default {
       copy: 'Zkopíruje vybrané objekty na nové místo.',
       erase: 'Odstraní vybrané objekty z výkresu.',
       offset: 'Vytvoří rovnoběžnou kopii objektu v zadané vzdálenosti.',
+      trim: 'Ořízne objekty podle řezných hran. Klávesou Enter použijete všechny objekty jako řezné hrany.',
+      fillet:
+        'Zaoblí roh dvou úseček nebo vrchol lomené čáry. Volbou Poloměr nastavíte poloměr zaoblení.',
       undo: 'Vrátí zpět poslední úpravu.',
       redo: 'Zopakuje poslední vrácenou úpravu.',
       properties: 'Otevře paletu Vlastnosti pro aktuální výběr.',
@@ -401,6 +404,8 @@ export default {
       copy: 'Kopírovat',
       erase: 'Vymazat',
       offset: 'Ekvidistanta',
+      trim: 'Oříznout',
+      fillet: 'Zaoblit',
       undo: 'Zpět',
       redo: 'Znovu',
       properties: 'Vlastnosti',
