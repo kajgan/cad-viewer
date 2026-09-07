@@ -23,6 +23,7 @@ import type {
   AcApLayerIsolationMode
 } from '../service/types'
 import { LAYER_LOCKED_FLAG } from '../service/types'
+import { suppressAttdefsInBlockDefinitions } from './AcApAttdefVisibility'
 import type { AcApLayerPreviousSnapshot } from './AcApLayerSessionState'
 import { AcApOpenDatabaseOptions } from './AcApOpenDatabaseOptions'
 
@@ -103,6 +104,7 @@ export class AcApDocument {
         readOnly: this._openMode === AcEdOpenMode.Read
       } as AcDbOpenDatabaseOptions
       await this._database.openUri(uri, baseOptions)
+      this.normalizeAttdefVisibility()
       this.docTitle = this._fileName
     } catch {
       isSuccess = false
@@ -151,12 +153,27 @@ export class AcApDocument {
         baseOptions,
         fileExtension == 'dwg' ? AcDbFileType.DWG : AcDbFileType.DXF
       )
+      this.normalizeAttdefVisibility()
       this.docTitle = this._fileName
     } catch {
       isSuccess = false
       this.emitOpenFileFailed(fileName, openErrorBefore)
     }
     return isSuccess
+  }
+
+  /**
+   * Hides ATTDEF entities inside block definitions so INSERT expansion does
+   * not draw duplicate copies of attribute values (see
+   * {@link suppressAttdefsInBlockDefinitions}). Failures must never fail the
+   * document open.
+   */
+  private normalizeAttdefVisibility(): void {
+    try {
+      suppressAttdefsInBlockDefinitions(this._database)
+    } catch (error) {
+      log.warn('[AcApDocument] Failed to normalize ATTDEF visibility:', error)
+    }
   }
 
   /**
